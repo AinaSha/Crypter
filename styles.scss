@@ -1,5 +1,6 @@
 @import './styles/vars';
 @import './styles/index';
+@import './styles/header';
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -14,6 +15,7 @@
 body {
     background-color: #141416;
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -26,3 +28,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Sans', sans-serif;
 }
 
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

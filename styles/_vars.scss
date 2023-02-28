@@ -1,0 +1,19 @@
+
+$white: #fcfcfd;
+$black:  #141416;
+$grey:  #777E91;
+$blue: #3772FF;
+$green: #45B36B;
+$violet: #9757D7;
+
+@mixin DM-font{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin Poppins-font{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+}
