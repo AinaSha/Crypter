@@ -5,35 +5,42 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
   }
 
   &__left {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 33%;
   }
 
   &__logo {
     width: 126px;
     height: 40px;
+    margin-right: 32px;
 
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
-  &__divider {
-    border-left: 2px solid #353945;
-    height: 40px;
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
   }
 
   &__menu-list {
       display: flex;
       align-items: center;
-      gap: 32px;  
+      border-left: 2px solid #353945; 
+      height: 40px;
+
+      li {
+        margin-left: 32px
+      }
   }
 
   &__menu-link {
@@ -45,8 +52,7 @@
   &__right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 52%;
+    gap: 24px;
   }
 
   .search-form {
@@ -91,7 +97,7 @@
     justify-content: center;
   }
 
-  .nav-links {
+  .btn-group {
     display: flex;
     gap: 12px;
 
@@ -99,17 +105,47 @@
       @include DM-font;
       color: $white;
       font-size: 0.875rem;
+    }
+
+    .upload-btn {
+      background-color: $blue;
+      padding: 9px 16px;
       border-radius: 90px;
     }
 
-    .nav-link1 {
-      background-color: $blue;
-      padding: 12px 16px;
+    .connect-btn {
+      border: 2px solid #777E91;
+      padding: 7px 16px;
+      border-radius: 90px;
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+ 
+@media (max-width: 768px) {
+  .header {
+    &__right {
+      display: none;
     }
 
-    .nav-link2 {
-      border: 2px solid #777E91;
-      padding: 10px 16px;
+    .burger {
+      display: block;
+      background-image: url(../assets/icon/Burger.svg);
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 32px;
     }
   }
 }

@@ -7,35 +7,61 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #141416;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+  background-color: #141416;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
 
 
 .container {
-    max-width: 1120px;
-    margin: 0 auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', sans-serif;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 864px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 608px;
+    }
+}
+
+// @media (max-width: 660px) {
+//     .container {
+//         max-width: 500px;
+//     }
+// }
+
+// @media (max-width: 525px) {
+//     .container {
+//         max-width: 360px;
+//     }
+// }
+// @media (max-width: 375px) {
+//     .container {
+//         max-width: 311px;
+//     }
+// }
