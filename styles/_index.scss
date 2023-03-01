@@ -1,5 +1,35 @@
 @import './vars';
 
-h1 {
-    color: antiquewhite;
+.hero {
+  &__wrapper {
+    width: 66%;
+    margin: 0 auto;
+    padding: 128px 0 0 0;
+  }
+  
+  &__descr {
+    @include Poppins-font;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: $grey;
+    text-align: center
+  }
+
+  &__title {
+    @include DM-font;
+    font-size: 2.5rem;
+    color: $white;
+    text-align: center;
+    margin:  8px 0 24px 0;
+  }
+
+  &__btn {
+    border: 2px solid #777E91;
+    padding: 16px 24px;
+    border-radius: 90px;
+    @include DM-font;
+    font-size: 1rem;
+    color: $white;
+  }
+
 }
