@@ -4,32 +4,68 @@
   &__wrapper {
     width: 66%;
     margin: 0 auto;
+    text-align: center;
     padding: 128px 0 0 0;
   }
   
-  &__descr {
+  &__descr,
+  &__descr-mobile {
     @include Poppins-font;
     font-size: 0.75rem;
     font-weight: 700;
     color: $grey;
-    text-align: center
+  }
+
+  &__descr-mobile {
+    display: none;
   }
 
   &__title {
     @include DM-font;
     font-size: 2.5rem;
     color: $white;
-    text-align: center;
-    margin:  8px 0 24px 0;
   }
 
   &__btn {
+    margin-top: 24px;
+  }
+
+  &__button {
+    display: inline-block;
     border: 2px solid #777E91;
-    padding: 16px 24px;
     border-radius: 90px;
+    padding: 16px 24px;
     @include DM-font;
     font-size: 1rem;
     color: $white;
   }
 
+}
+
+@media (max-width: 600px) {
+  .hero {
+    &__wrapper {
+      width: 80%;
+    }
+
+    &__descr {
+      display: none;
+    }
+
+    &__descr-mobile {
+      display: block;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    &__wrapper {
+      width: 100%;
+    }
+  } 
 }
