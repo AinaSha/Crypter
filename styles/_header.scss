@@ -134,7 +134,7 @@
 }
 
  
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header {
     &__right {
       display: none;
@@ -142,7 +142,7 @@
 
     .burger {
       display: block;
-      background-image: url(../assets/icon/Burger.svg);
+      background-image: url(../assets/icon/header/Burger.svg);
       background-repeat: no-repeat;
       width: 32px;
       height: 32px;
