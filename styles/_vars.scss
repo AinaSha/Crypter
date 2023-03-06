@@ -2,6 +2,7 @@
 $white: #fcfcfd;
 $black:  #141416;
 $grey:  #777E91;
+$light-grey: #E6E8EC;
 $blue: #3772FF;
 $green: #45B36B;
 $violet: #9757D7;
@@ -10,10 +11,56 @@ $violet: #9757D7;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
+  color: $white;
 }
 
 @mixin Poppins-font{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
+  color: $white;
+}
+
+@mixin btn {
+  @include DM-font;
+  border: #353945;
+  text-align: center;
+  display: block;
+  border: 2px solid #353945;
+  border-radius: 90px;
+}
+
+h5 {
+  @include Poppins-font;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h6 {
+  @include Poppins-font;
+  font-size: 0.75rem;
+  color: $grey;
+}
+
+.section-title {
+  @include DM-font;
+  font-size: 2.5rem;
+  letter-spacing: -0.01em;
+}
+
+.user-name {
+  @include Poppins-font;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.user-rate {
+  @include Poppins-font;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.user-rate span {
+  font-weight: 400;
+  color: $grey;
 }

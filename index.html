@@ -30,11 +30,11 @@
           <div class="search-form">
             <input class="search-form__input" type="text" placeholder="Search">
             <button class="search-form__btn">
-              <img src="./assets/icon/search.svg" alt="search icon">
+              <img src="./assets/icon/header/search.svg" alt="search icon">
             </button>
           </div>
           <div class="notification">
-            <img src="./assets/icon/notification.svg" alt="notification icon">
+            <img src="./assets/icon/header/notification.svg" alt="notification icon">
           </div>
           <div class="btn-group">
             <div class="upload-btn">
@@ -49,5 +49,462 @@
       </div>
     </div>
   </header>
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div class="hero__wrapper">
+          <p class="hero__descr">Create, explore, & collect digital art NFTs.</p>
+          <p class="hero__descr-mobile">stacks 1.0</p>
+          <h1 class="hero__title">The new creative economy.</h1>
+          <div class="hero__btn">
+            <a  class="hero__button" href="#">Start your search</a>
+          </div>
+        </div>
+      </section>
+      <!-- creator section -->
+      <section class="creator">
+        <div class="creator__wrapper">
+          <div class="creator__video-block">
+            <div class="video-poster">
+              <video class="video-player" loop preload="auto">
+                  <source src="https://www.youtube.com/watch?v=F0a4VaSJMjk" type='video/webm; codecs="vp8.0, vorbis"'>
+                  <source src="./assets/video/BeART_Video.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                  <p>Sorry, but your browser does not support this video format.</p>
+              </video>
+            </div>    
+            <div class="video-control">
+              <div class="video-control__inner">
+                <button>
+                  <img src="./assets/icon/main/video-play.svg" alt="video play icon">
+                </button>
+                <!-- <div class="video-progress"> -->
+                  <!-- <progress id="progress-bar" value="0" min="0"></progress> -->
+                <!-- </div> -->
+                  <input class="seek" id="seek" value="0" min="0" type="range" step="0.01">
+                <div class="time">
+                  <span class="duration">2:20</span>
+                </div>
+                <button class="volume__button">
+                  <img src="./assets/icon/main/volume.svg" alt="volume icon">
+                </button>
+                <button>
+                  <img src="./assets/icon/main/video-zoom.svg" alt="video zoom icon">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="creator__info">
+            <div class="creator__info-inner">
+              <div class="slide-item">
+                <h2>the creator network®</h2>
+                <div class="user-data">
+                  <div class="left-side">
+                    <div class="user-data__img">
+                      <img src="./assets/img/avatar.png" alt="User foto">
+                    </div>
+                    <div class="user">
+                      <h6>Creator</h6>
+                      <p>Enrico Cole</p>
+                    </div>
+                  </div>
+                  <div class="right-side">
+                    <img src="./assets/icon/main/creator-price.svg" alt="instance price icon">
+                    <div class="price-data">
+                      <h6>Instant price</h6>
+                      <p>3.5 ETH</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="bid-info">
+                  <div class="bid-info__inner">
+                    <div class="bid">
+                      <h6>Current Bid</h6>
+                      <p class="bid-eth">1.00 ETH</p>
+                      <p class="bid-usd">$3,618.36</p>
+                    </div>
+                    <div class="bid-deadline">
+                      <h6>Auction ending in</h6>
+                      <div class="deadline-time">
+                        <div class="deadline-time__item">
+                          <p class="digit">19</p>
+                          <p class="digit-name">Hrs</p>
+                        </div>
+                        <div class="deadline-time__item">
+                          <p class="digit">24</p>
+                          <p class="digit-name">mins</p>
+                        </div>
+                        <div class="deadline-time__item">
+                          <p class="digit">19</p>
+                          <p class="digit-name">secs</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="place-btn">
+                  <a href="#">Place a bid</a>
+                </div>
+                <div class="view-btn">
+                  <a href="#">View item</a>
+                </div>
+              </div>
+              <div class="slide-btns">
+                <button class="slide-arrow">
+                  <img src="./assets/icon/main/arrow-left.svg" alt="arrow left icon">
+                </button>
+                <button class="slide-arrow active-btn">
+                  <img src="./assets/icon/main/arrow-right.svg" alt="arrow right icon">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- future section -->
+      <section class="future">
+        <div class="future__wrapper">
+          <div class="first-block">
+            <div class="first-block__image">
+              <img src="./assets/img/future-img.png" alt="futuristic image">
+            </div>
+            <div>
+              <div class="first-block__info">
+                <div class="first-block__info-right">
+                  <div class="first-block__img">
+                    <img src="./assets/img/avatar.png" alt="User foto">
+                  </div>
+                  <div class="first-block__text">
+                    <h5>The future of ETH®</h5>
+                    <p>18 in stock</p>
+                  </div>
+                </div>
+                <div class="first-block__info-left">
+                  <h6>Highest bid</h6>
+                  <p class="crypt-rate">1.125 ETH</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="second-block">
+            <div class="second-block__item">
+              <div class="second-block__image">
+                <img src="./assets/img/future1.png" alt="futuristic image">
+              </div>
+              <div class="second-block__data">
+                <div class="second-block__data-inner">
+                  <h5>ETH never die</h5>
+                  <div class="user-data">
+                    <div class="user-data__avatar">
+                      <img src="./assets/img/avatar.png" alt="user image">
+                    </div>
+                    <p class="crypt-rate">0.25 ETH</p>
+                    <p class="rating" >1 of 12</p>
+                  </div>
+                  <div class="user-data__btn">
+                    <a href="#">Place a bid</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="second-block__item">
+              <div class="second-block__image">
+                <img src="./assets/img/future-middle.png" alt="futuristic image">
+              </div>
+              <div class="second-block__data">
+                <div class="second-block__data-inner">
+                  <h5>ETH never die</h5>
+                  <div class="user-data">
+                    <div class="user-data__avatar">
+                      <img src="./assets/img/avatar.png" alt="user image">
+                    </div>
+                    <p class="crypt-rate">0.25 ETH</p>
+                    <p class="rating" >1 of 12</p>
+                  </div>
+                  <div class="user-data__btn">
+                    <a href="#">Place a bid</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="second-block__item">
+              <div class="second-block__image">
+                <img src="./assets/img/future2.png" alt="futuristic image">
+              </div>
+              <div class="second-block__data">
+                <div class="second-block__data-inner">
+                  <h5>ETH never die</h5>
+                  <div class="user-data">
+                    <div class="user-data__avatar">
+                      <img src="./assets/img/avatar.png" alt="user image">
+                    </div>
+                    <p class="crypt-rate">0.25 ETH</p>
+                    <p class="rating" >1 of 12</p>
+                  </div>
+                  <div class="user-data__btn">
+                    <a href="#">Place a bid</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="third-block">
+            <div class="third-block__inner">
+              <h4>Latest upload from creators 🔥</h4>
+              <div class="creator-upload">
+                <div class="creator-upload__item">
+                  <div class="creator-upload__item-inner">
+                    <div class="upload-avatar">
+                      <div class="upload-avatar__image">
+                        <img src="./assets/img/avatar2.png" alt="">
+                      </div>
+                      <div class="upload-quantity">
+                        <span>6</span>
+                      </div>
+                    </div>
+                    <div class="upload-info">
+                      <p class="user-name">Payton Harris</p>
+                      <p class="user-rate">2.436 <span>ETH</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="creator-upload__item">
+                  <div class="creator-upload__item-inner">
+                    <div class="upload-avatar">
+                      <div class="upload-avatar__image">
+                        <img src="./assets/img/avatar.png" alt="">
+                      </div>
+                      <div class="upload-quantity">
+                        <span>2</span>
+                      </div>
+                    </div>
+                    <div class="upload-info">
+                      <p class="user-name">Lorena Wedner</p>
+                      <p class="user-rate">2.436 <span>ETH</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="creator-upload__item">
+                  <div class="creator-upload__item-inner">
+                    <div class="upload-avatar">
+                      <div class="upload-avatar__image">
+                        <img src="./assets/img/avatar2.png" alt="">
+                      </div>
+                      <div class="upload-quantity">
+                        <span>3</span>
+                      </div>
+                    </div>
+                    <div class="upload-info">
+                      <p class="user-name">Anita Bins</p>
+                      <p class="user-rate">2.436 <span>ETH</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="creator-upload__item">
+                  <div class="creator-upload__item-inner">
+                    <div class="upload-avatar">
+                      <div class="upload-avatar__image">
+                        <img src="./assets/img/avatar.png" alt="">
+                      </div>
+                      <div class="upload-quantity">
+                        <span>4</span>
+                      </div>
+                    </div>
+                    <div class="upload-info">
+                      <p class="user-name">Joana Wuckert</p>
+                      <p class="user-rate">2.436 <span>ETH</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="discover__btn">
+                <a href="#">Discover more 
+                  <img src="./assets/icon/main/arrow-right.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>  
+       <!-- sellers section -->
+      <section class="sellers">
+        <div class="container">
+          <div class="sellers__wrapper">
+            <div class="sellers-header">
+              <div class="sellers-header__inner">
+                <div class="left-side">
+                  <p>Popular</p>
+                  <h3 class="section-title sellers-title">Sellers</h3>
+                </div>
+                <div class="right-side">
+                  <p>timeframe</p>
+                  <button>
+                    Today
+                    <img src="./assets/icon/main/arrow-small-down.svg" alt="arrow down icon">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="sellers-slider">
+              <div class="sellers-slider__wrapper">
+                <div class="sellers-slider__cards">
+                  <div class="card">
+                    <div class="card__inner">
+                      <div class="card__actions">
+                        <div class="rating-badge">
+                          <img src="./assets/img/badge1.png" alt="badge icon">
+                        </div>
+                        <div class="action-icon-btn">
+                            <img src="./assets/icon/main/plus.svg" alt="plus icon">
+                            <img src="./assets/icon/main/up-arrow.svg" alt="arrow up icon">
+                        </div>
+                      </div>
+                      <div class="card__seller-info">
+                        <div class="seller-avatar">
+                        <img src="./assets/img/avatar.png" alt="avatar image">
+                        </div>
+                        <img class ="diamond" src="./assets/icon/main/diamond.svg" alt="diamond img">
+                        <p class="user-name">Anita Bins</p>
+                        <p class="user-rate">2.436 <span>ETH</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__inner">
+                      <div class="card__actions">
+                        <div class="rating-badge">
+                          <img src="./assets/img/badge1.png" alt="badge icon">
+                        </div>
+                        <div class="action-icon-btn">
+                            <img src="./assets/icon/main/plus.svg" alt="plus icon">
+                            <img src="./assets/icon/main/up-arrow.svg" alt="arrow up icon">
+                        </div>
+                      </div>
+                      <div class="card__seller-info">
+                        <div class="seller-avatar">
+                        <img src="./assets/img/avatar.png" alt="avatar image">
+                        </div>
+                        <img class ="diamond" src="./assets/icon/main/diamond.svg" alt="diamond img">
+                        <p class="user-name">Anita Bins</p>
+                        <p class="user-rate">2.436 <span>ETH</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__inner">
+                      <div class="card__actions">
+                        <div class="rating-badge">
+                          <img src="./assets/img/badge1.png" alt="badge icon">
+                        </div>
+                        <div class="action-icon-btn">
+                            <img src="./assets/icon/main/plus.svg" alt="plus icon">
+                            <img src="./assets/icon/main/up-arrow.svg" alt="arrow up icon">
+                        </div>
+                      </div>
+                      <div class="card__seller-info">
+                        <div class="seller-avatar">
+                        <img src="./assets/img/avatar.png" alt="avatar image">
+                        </div>
+                        <img class ="diamond" src="./assets/icon/main/diamond.svg" alt="diamond img">
+                        <p class="user-name">Anita Bins</p>
+                        <p class="user-rate">2.436 <span>ETH</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__inner">
+                      <div class="card__actions">
+                        <div class="rating-badge">
+                          <img src="./assets/img/badge1.png" alt="badge icon">
+                        </div>
+                        <div class="action-icon-btn">
+                            <img src="./assets/icon/main/plus.svg" alt="plus icon">
+                            <img src="./assets/icon/main/up-arrow.svg" alt="arrow up icon">
+                        </div>
+                      </div>
+                      <div class="card__seller-info">
+                        <div class="seller-avatar">
+                        <img src="./assets/img/avatar.png" alt="avatar image">
+                        </div>
+                        <img class ="diamond" src="./assets/icon/main/diamond.svg" alt="diamond img">
+                        <p class="user-name">Anita Bins</p>
+                        <p class="user-rate">2.436 <span>ETH</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__inner">
+                      <div class="card__actions">
+                        <div class="rating-badge">
+                          <img src="./assets/img/badge1.png" alt="badge icon">
+                        </div>
+                        <div class="action-icon-btn">
+                            <img src="./assets/icon/main/plus.svg" alt="plus icon">
+                            <img src="./assets/icon/main/up-arrow.svg" alt="arrow up icon">
+                        </div>
+                      </div>
+                      <div class="card__seller-info">
+                        <div class="seller-avatar">
+                        <img src="./assets/img/avatar.png" alt="avatar image">
+                        </div>
+                        <img class ="diamond" src="./assets/icon/main/diamond.svg" alt="diamond img">
+                        <p class="user-name">Anita Bins</p>
+                        <p class="user-rate">2.436 <span>ETH</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="sellers-slider-btns sellers-slider-btns-left">
+                  <svg 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                      fill-rule="evenodd" 
+                      clip-rule="evenodd" 
+                      d="M9.90906 7.26521C9.50324 6.8906 8.87058 6.9159 8.49597 7.32172L5.2652 10.8217C4.9116 11.2047 4.9116 11.7952 5.26519 12.1782L8.49597 15.6783C8.87057 16.0841 9.50323 16.1094 9.90905 15.7348C10.3149 15.3602 10.3402 14.7276 9.96558 14.3217L8.28397 12.5L18 12.5C18.5523 12.5 19 12.0523 19 11.5C19 10.9477 18.5523 10.5 18 10.5L8.284 10.5L9.96557 8.67829C10.3402 8.27247 10.3149 7.63981 9.90906 7.26521Z" 
+                      fill="#777E91"/>
+                  </svg>
+                </button>
+                <button class="sellers-slider-btns sellers-slider-btns-right">
+                  <svg 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path 
+                      fill-rule="evenodd" 
+                      clip-rule="evenodd" 
+                      d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z" 
+                      fill="#777E91"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="earn-section">
+        <div class="earn-section__wrapper">
+          <div class="earn-section__descr">
+            <p>Save your time with Stacks</p>
+            <h2>Earn free crypto with Crypter</h2>
+            <p>A creative agency that lead and inspire</p>
+            <div>
+              <a href="">Earn now</a>
+            </div>
+            <div>
+              <a href="">Discover more</a>
+            </div>
+          </div>
+          <div class="earn-section__img">
+            <img src="./assets/img/earn-section.png" alt="cube and crypto image">
+          </div>
+        </div>
+      </section> -->
+  </main>
 </body>
 </html>
